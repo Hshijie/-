@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/head.css">
+    <title>Title</title>
+    <style>
+        @media(max-width: 1440px) {
+        }
+            #lunbobox {
+                /*width:500px;*/
+                /*height:300px;*/
+                width: 100%;
+                height: 570px;
+                position: relative;
+            }
+
+            .lunbo {
+                /*width:500px;*/
+                /*height:300px;*/
+                width: 100%;
+                height: 570px;
+                position: relative;
+
+            }
+
+            .lunbo img {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                margin: 0!important;
+                vertical-align: middle;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .lunboul{
+                width: 870px;
+                height: 100px;
+                position: absolute;
+                bottom: 80px;
+                left: 250px;
+            }
+            #lunbobox ul {
+                width: 750px;
+                height: 80px;
+                z-index: 5;
+                float: left;
+            }
+
+            #lunbobox ul li {
+                float: left;
+                cursor: pointer;
+                width: 180px;
+                height: 80px;
+                float: left;
+                list-style: none;
+                text-align: center;
+                margin: 0px 5px 0px 0px;
+            }
+
+            #lunbobox ul li img {
+                width: 180px;
+                height: 80px;
+            }
+        #toleft{
+            float: left;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        #toright{
+            float: left;
+            margin-top: 10px;
+            transform: rotate(180deg);
+        }
+
+        .search .main .searchbar{
+            margin-top: 21px;
+            width: 422px;
+            height: 38px;
+            background: rgba(10,10,10,0.25);
+            font-size: 26px;
+            font-family: DFKai-SB;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 15px;
+            position: absolute;
+            bottom: 350px;
+            left: 500px;
+        }
+        .searchbar input{
+            -web-kit-appearance:none;
+            -moz-appearance: none;
+            outline:0;
+        }
+        .main .searchbar .searchbar-text{
+            float: left;width: 345px;
+            font-size: 20px;border: 0;background: rgba(1,1,1,0.001);
+            height: 25px;position: absolute;top: 5px;left: 15px;color: white;font-family:'Segoe UI Semibold'
+        }
+        .main .searchbar a img{
+            position: absolute;
+            right: 17.5px;
+            top: 7px;
+        }
+        .searchbar a img:hover{
+            transition: 0.2s;
+            transform: rotate(90deg);
+        }
+
+    </style>
+</head>
+<body>
+<div class="header" id="header1">
+    <!--导航栏-->
+    <div class="navbox clear  nav-chuancai">
+        <div class="nav">
+            <div class="Z-logo">
+                <img src="../img/chuancai/logo1.png" class="tu-logo">
+                <img src="../img/chuancai/logo2.png" class="zi-logo">
+            </div>
+            <div class="Z-ul">
+                <ul class="Z-ul2">
+                    <a href="../mszhuye/mssy.html"><li>首页</li></a>
+                    <a href="../shiquanshimei/caipu1.html"><li>菜谱</li></a>
+                    <li>食材</li>
+                    <a href="../shiquanshimei/dachulail2.html"><li>大厨来了</li></a>
+                    <li>晒菜专区</li>
+                    <li>活动</li>
+                </ul>
+            </div>
+            <div class="Z-tubiao">
+                <ul>
+                    <li><img src="../img/chuancai/weixin.png" alt=""></li>
+                    <li><img src="../img/chuancai/qqlogo.png" alt=""></li>
+                    <li>登陆</li>
+                    <li>|</li>
+                    <li>注册</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--<div class="middle_right">-->
+    <div id="lunbobox">
+        <div class="lunbo">
+            <a href="#"><img src="./img/header.png"></a>
+            <a href="#"><img src="./img/11111.jpg"></a>
+            <a href="#"><img src="./img/2222.jpg"></a>
+            <a href="#"><img src="./img/33333.jpg"></a>
+            <a href="#"><img src="./img/jitui.jpg"></a>
+        </div>
+        <div class="lunboul" >
+            <div id="toleft"><img src="./img/xiaoyuhao.png" alt=""></div>
+                <ul>
+                    <li><img src="./img/mini_1.png" alt=""></li>
+                    <li><img src="./img/mini_2.png" alt=""></li>
+                    <li><img src="./img/mini_3.png" alt=""></li>
+                    <li><img src="./img/mini_4.png" alt=""></li>
+                </ul>
+            <div id="toright"><img src="./img/xiaoyuhao.png" alt=""></div>
+        </div>
+        <span></span>
+    </div>
+    <div class="search">
+        <div class="main">
+            <img src="./img/Only%20love%20and%20food%20can%20not%20be%20lived%20up%20to.png" alt="">
+            <img src="./img/wyahmsbkgf.png" alt="">
+            <div class="searchbar">
+                <input type="text" class="searchbar-text">
+                <a href=""><img src="./img/search-logo.png" alt="" style=""></a>
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+    ///轮播
+    $(function() {
+        //$("#toright").hide();
+        //$("#toleft").hide();
+        $('#toright').hover(function() {
+            $("#toleft").hide()
+        }, function() {
+            $("#toleft").show()
+        })
+        $('#toleft').hover(function() {
+            $("#toright").hide()
+        }, function() {
+            $("#toright").show()
+        })
+    })
+
+    var t;
+    var index = 0;
+    /////自动播放
+    t = setInterval(play, 3000)
+
+    function play() {
+        index++;
+        if (index > 4) {
+            index = 0
+        }
+        // console.log(index)
+        $("#lunbobox ul li").eq(index).css({
+            "background": "#999",
+            "border": "1px solid #ffffff"
+        }).siblings().css({
+            "background": "#cccccc",
+            "border": ""
+        })
+
+        $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+    };
+
+    ///点击鼠标 图片切换
+    $("#lunbobox ul li").click(function() {
+
+        //添加 移除样式
+        //$(this).addClass("lito").siblings().removeClass("lito"); //给当前鼠标移动到的li增加样式 且其余兄弟元素移除样式   可以在样式中 用hover 来对li 实现
+        $(this).css({
+            "background": "#999",
+            "border": "1px solid #ffffff"
+        }).siblings().css({
+            "background": "#cccccc"
+        })
+        var index = $(this).index(); //获取索引 图片索引与按钮的索引是一一对应的
+        // console.log(index);
+
+        $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000); // siblings  找到 兄弟节点(不包括自己）
+    });
+
+    /////////////上一张、下一张切换
+    $("#toleft").click(function() {
+        index--;
+        if (index <= 0) //判断index<0的情况为：开始点击#toright  index=0时  再点击 #toleft 为负数了 会出错
+        {
+            index = 4
+        }
+        console.log(index);
+        $("#lunbobox ul li").eq(index).css({
+            "background": "#999",
+            "border": "1px solid #ffffff"
+        }).siblings().css({
+            "background": "#cccccc"
+        })
+
+        $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000); // siblings  找到 兄弟节点(不包括自己）必须要写
+    }); // $("#imgbox a ")获取到的是一个数组集合 。所以可以用index来控制切换
+
+    $("#toright").click(function() {
+        index++;
+        if (index > 4) {
+            index = 0
+        }
+        console.log(index);
+        $(this).css({
+            "opacity": "0.5"
+        })
+        $("#lunbobox ul li").eq(index).css({
+            "background": "#999",
+            "border": "1px solid #ffffff"
+        }).siblings().css({
+            "background": "#cccccc"
+        })
+        $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000); // siblings  找到 兄弟节点(不包括自己）
+    });
+    $("#toleft,#toright").hover(function() {
+            $(this).css({
+                "color": "black"
+            })
+        },
+        function() {
+            $(this).css({
+                "opacity": "0.3",
+                "color": ""
+            })
+        })
+    ///
+
+    ///////鼠标移进  移出
+    $("#lunbobox ul li,.lunbo a img,#toright,#toleft ").hover(
+        ////////鼠标移进
+        function() {
+            $('#toright,#toleft').show()
+            clearInterval(t);
+
+        },
+        ///////鼠标移开
+        function() {
+            //$('#toright,#toleft').hide()
+            //alert('aaa')
+            t = setInterval(play, 3000)
+
+            function play() {
+                index++;
+                if (index > 4) {
+                    index = 0
+                }
+                $("#lunbobox ul li").eq(index).css({
+                    "background": "#999",
+                    "border": "1px solid #ffffff"
+                }).siblings().css({
+                    "background": "#cccccc"
+                })
+                $(".lunbo a ").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+            }
+        })
+</script>
+</body>
+</html>
