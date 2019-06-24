@@ -1,0 +1,411 @@
+/*返回顶部*/
+#wrapper{
+    margin: 0 auto;
+    width: 480px;
+}
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;bottom: 10px;
+    right: 10px;overflow: hidden;
+    width: 50px;height: 50px;border: none;
+    text-indent: 100%;
+    background: url(../img/xiangqingye/returnback.png) no-repeat #f8b551 0px 0px;
+    text-align: center;
+}
+/*标题部件*/
+.biaoti-hong{
+    width: 320px;
+    height: 70px;
+    position: relative;
+}
+.hong-left{
+    width: 155px;
+    height: 1px;
+    background-image: linear-gradient(to right, #f6f1f2 0%, #fda085 51%, #ec292a 100%);
+    position: absolute;
+    top: 50px;
+}
+.hong-zhong{
+    width: 1px;
+    height: 60px;
+    background: #ec292a;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 165px;
+    top: 10px;
+}
+.hong-right{
+    width: 150px;
+    height: 1px;
+    background-image: linear-gradient(to right, #ec292a 0%, #fda085 51%, #f9f9f9 100%);
+    position: absolute;
+    top: 60px;
+    left: 160px;
+}
+.zi-left{
+    font-size: 22px;
+    color: #ec292a;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.zi-left-e{
+    left: -20px;
+}
+.zi-left-s{
+    left: 15px;
+}
+.zi-right{
+    font-size: 12px;
+    color: #ec292a;
+    position:absolute;
+    left: 200px;
+    top: 40px;
+}
+.zi-right-coop{
+    left: 170px;
+}
+
+/*查看更多按钮*/
+.CC-liaojie{
+    width: 100%;
+    height: 70px;
+}
+.chakan{
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background: #f8b551;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    margin:35px auto;
+}
+
+/*视频*/
+/*第一张视频大的*/
+.shipin-heipian{
+    width: 100%;
+    height: 20%;
+    background: rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: -10px;
+    left: 3px;
+}
+.shipin-heipian img{
+    width: 7%;
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+}
+.shiping-wenzijs{
+    float: left;
+    /*font-size:20px;*/
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+.shiping-tubiaojs{
+    width: 85%;
+    height: 50%;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+.sp1{
+    font-size: 18px;
+}
+.sp2{
+    font-size: 8px;
+}
+.shiping-tubiaojs{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+}
+.shiping-tubiaojs img{
+    width: 15px;
+    height: 15px;
+    float: left;
+    position: absolute;
+    left: 1px;
+}
+.shiping-tubiaojs p{
+    float: left;
+    font-size: 10px;
+    color: rgba(249, 249, 249, 0.7);
+    position:absolute;
+    left: 25px;
+    top: 10px;
+}
+.shiping-tubiaoxb{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 450px;
+    top: 50px;
+}
+.shiping-tubiaoxb li{
+    list-style: none;
+    float: left;
+    font-size: 10px;
+    color: white;
+    margin-left: 50px;
+}
+.shiping-tubiaoxb .lipic1{
+    list-style-image: url("../img/dachulail/xiaobofang.png");
+    margin-top: 5px;
+}
+.shiping-tubiaoxb .lipic2{
+    list-style-image: url("../img/dachulail/muzhi.png");
+}
+/*第二张视频*/
+.shipin-heipian1{
+    width: 99%;
+    height: 20%;
+    background: rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: -2px;
+    left: 1%;
+}
+.bofangpic{
+    position: absolute;
+    left: 5%;
+    top: 8%;
+}
+.sp-bt2{
+    width: 265px;
+    height: 23px;
+
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 165px;
+    left: 60px;
+}
+.shiping-tubiaojs-r{
+    width: 250px;
+    height: 20px;
+    /*background: #cccccc;*/
+    position: absolute;
+    top: 185px;
+    left: 60px;
+}
+.shiping-tubiaojs-r p{
+    float: left;
+    font-size: 8px;
+    color: rgba(249, 249, 249, 0.7);
+    position:absolute;
+    left: 25px;
+    top: 5px;
+}
+.shiping-tubiaoxb-r{
+    width: 130px;
+    height: 20px;
+    position: absolute;
+    left: 190px;
+    top: 185px;
+}
+.shiping-tubiaoxb-r li{
+    list-style: none;
+    float: left;
+    font-size: 3px;
+    color: white;
+    margin-left: 20px;
+}
+.shiping-tubiaoxb-r .lipic1{
+    list-style-image: url("../img/dachulail/xiaobofang.png");
+    margin-top: 5px;
+}
+.shiping-tubiaoxb-r .lipic2{
+    list-style-image: url("../img/dachulail/muzhi.png");
+}
+
+/*大厨推荐  部件*/
+
+.tj-neirong{
+    width: 320px;
+    height: 124px;
+    background: white;
+    position: absolute;
+    left: 0px;
+    top: 203px;
+}
+.tuijian-tou {
+    position: absolute;
+    bottom: 150px;
+}
+.wmsbh{
+    font-size: 15px;
+    color: #f8b551;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+.ul-huo{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    left: 270px;
+    top: 13px;
+    color: #ec292a;
+    font-size: 8px;
+}
+.ul-huo li{
+    list-style: none;
+    list-style-image: url("../img/dachulail/huo.png");
+}
+.shaguorou{
+    width: 200px;
+    height: 50px;
+    color: #ec292a;
+    font-size: 18px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+.wenzi-tuijian{
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+    top: 75px;
+    color: #757575;
+}
+.xiangqing{
+    width: 50px;
+    height: 30px;
+    color: #f8b551;
+    font-size: 14px;
+    position: absolute;
+    left: 263px;
+    top: 94px;
+}
+.tuijian-tou{
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: white 10px solid;
+    position: absolute;
+    left: 10px;
+    top: 165px;
+}
+/*菜谱线条动画*/
+
+#underline{
+    width: 40px;
+    height: 10px;
+    margin:auto;
+    position: relative;
+}
+
+#underline:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .5s;
+}
+
+#underline:hover:after{
+    left: 0%;
+    width: 100%;
+}
+
+/*弹窗*/
+#background {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#div1 {
+    background:#eeeeee;
+    width: 50%;
+    z-index: 1;
+    margin: 12% auto;
+    overflow: auto;
+}
+
+span {
+    color: white;
+
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+#div2 {
+    background: #fef0e3;
+    margin: auto;
+    height: 300px;
+    padding: 0 20px;
+}
+
+#close {
+    padding: 5px;
+    background: rgba(255,0,0,0.5);
+}
+
+#close-button {
+    float: right;
+    font-size: 30px;
+}
+
+#foot {
+    padding: 5px 0;
+    text-align: center;
+    background: rgba(255,0,0,0.5);
+    color: #fef0e3;
+}
+
+h2 {
+    margin: 10px 0;
+    color: white;
+    padding-left: 15px;
+}
+
+h3 {
+    margin: 0 0px;
+    padding-top: 15px;
+}
+
+.inputzhuce{
+    width: 100%;
+    height: 90px;
+}
+.inputzhuce input{
+    margin-top: 30px;
+    margin-left: 178px;
+    width: 300px;
+    height: 50px;
+    -moz-appearance: none;
+    border:1px solid #f2d8c7;
+    outline:0;
+    font-size: 22px;
+    color: #e75854;
+}
+#yijiandenglu{
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+    background: #e75854;
+    color: #fef0e3;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+#yijiandenglu:active{
+    box-shadow: #dedede 4px 4px 4px;
+}
